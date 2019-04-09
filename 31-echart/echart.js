@@ -1,35 +1,35 @@
 $(function() {
     var xData = [],
-      yData = [];
+        yData = [];
 
-  for(var i = 0; i <= 1; i += 0.1) {
+    for(var i = 0; i <= 1; i += 0.1) {
       xData.push(roundFractional(i, 1));
       yData.push(roundFractional(h(i), 2));          
-  }
-  /* global echarts: true */
-  var myChart = echarts.init($('.main').get(0));
+    }
+    /* global echarts: true */
+    var myChart = echarts.init($('.main').get(0));
 
-  var option = {
-     title: {
+    var option = {
+      title: {
         text: '二进熵函数曲线'     
       },
-     tooltip: {},
-     legend: {
+      tooltip: {},
+      legend: {
         data:['信息量']      
-     },
-     xAxis: {
+      },
+      xAxis: {
         data: xData
-     },
-     yAxis: {},
-     series: [{
+      },
+      yAxis: {},
+      series: [{
         name: '信息量',
         type: 'line',
         smooth: 'true',
         data: yData                                  
-     }]
-  };
+      }]
+    };
 
-  myChart.setOption(option);
+    myChart.setOption(option);
 
    /**
     ** 小数点后面保留第 n 位*
