@@ -1,11 +1,25 @@
 {
-  "name": "spa-demo",
+  "name": "spa",
   "version": "1.0.0",
-  "description": "",
+  "description": "spa-dem",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunxiaoxue0304/spa.git"               
+  },
+  "author": "sunxiaoxue0304",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunxiaoxue0304/spa/issues"            
+  },
+    "homepage": "https://github.com/sunxiaoxue0304/spa#readme",
+    "devDependencies": {
+      "grunt": "^1.0.4",
+      "grunt-contrib-csslint": "^2.0.0",
+      "grunt-eslint": "^21.0.0",
+      "grunt-htmlhint": "^0.9.13"                          
+    }
 }
