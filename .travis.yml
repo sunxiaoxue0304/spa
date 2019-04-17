@@ -1,9 +1,8 @@
 language: node_js
 node_js:
-  - "6.10.1"
+  - "6"
 
 after_script:
-  - grunt
   - git init
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
