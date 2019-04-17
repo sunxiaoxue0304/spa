@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sunxiaoxue0304/spa.git"               
+    "url": "git+https://github.com/sunxiaoxue0304/spa.git"
   },
   "author": "sunxiaoxue0304",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sunxiaoxue0304/spa/issues"            
+    "url": "https://github.com/sunxiaoxue0304/spa/issues"
   },
-    "homepage": "https://github.com/sunxiaoxue0304/spa#readme",
-    "devDependencies": {
-      "grunt": "^1.0.4",
-      "grunt-contrib-csslint": "^2.0.0",
-      "grunt-eslint": "^21.0.0",
-      "grunt-htmlhint": "^0.9.13"                          
-    }
+  "homepage": "https://github.com/sunxiaoxue0304/spa#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-eslint": "^21.0.0",
+    "grunt-htmlhint": "^0.9.13"
+  }
 }
