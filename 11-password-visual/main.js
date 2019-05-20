@@ -5,7 +5,7 @@ $(function(){
   $pwd.on('input',function(){
     $pwdText.val($pwd.val());
   });
-  $eye.mousemove(function(){
+  $eye.mouseover(function(){
     $pwdText.css('z-index','10');
   });
   $eye.mouseout(function(){
