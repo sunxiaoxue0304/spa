@@ -1,19 +1,31 @@
 $(function() {
     var $width   = $('#rectangle-width'),
       $height  = $('#rectangle-height'),
-      $calc    = $('#rectangle-calc'),
-      blnValid = false;
+      $calc    = $('#rectangle-calc');
+      //blnValid = false;
 
     $calc.click(function() {
-      if(!blnValid) return;
+      //if(!blnValid) return;
+      if(!validate('#rectangle-width') || !validate('#rectangle-height')) return;
 
       var width  = Number($width.val()),
           height = Number($height.val()),
           p = roundFractional(width * 2 + height * 2, 2),
           a = roundFractional(width * height, 2);
+
+      
       $('#rectangle-perimeter').val(p);
-        $('#rectangle-area').val(a);
+      $('#rectangle-area').val(a);
     });
+
+
+  /**
+   * 小数点后面保留第 n 位
+   * 
+   * @param x 做近似处理的数
+   * @param n 小数点后第 n 位
+   * @returns 近似处理后的数 
+   */
 
     $width.focusout(function() {
         blnValid = validate('#rectangle-width');         
@@ -27,7 +39,13 @@ $(function() {
         return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);         
     }
   
-    //对字段进行数据合法性校验
+  /**
+   * 对字段进行数据合法性校验
+   *
+   * @param field 字段的 id
+   * @returns boolean 验证通过为 true，验证不通过为 false
+   */
+  
     function validate(field) {
       var $data    = $(field),
           $message = $(field + '-validate'),
