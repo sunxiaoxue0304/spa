@@ -27,12 +27,12 @@ $(function() {
    * @returns 近似处理后的数 
    */
 
-    $width.focusout(function() {
-        blnValid = validate('#rectangle-width');         
-    });
-    $height.focusout(function() {
-        blnValid = validate('#rectangle-height');            
-    });
+    // $width.focusout(function() {
+    //     blnValid = validate('#rectangle-width');         
+    // });
+    // $height.focusout(function() {
+    //     blnValid = validate('#rectangle-height');            
+    // });
 
     //小数点后面保留第 n 位
     function roundFractional(x, n) {
